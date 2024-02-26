@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleForm.css">
+    <style>
+         * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif; 
+    background-color: #f0f2f5;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+form {
+    background-color: #fff;
+    width: 320px;
+    padding: 20px; 
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='text']
+{
+    display: block;
+    width: 100%; 
+    margin-bottom: 15px; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button[type='submit'] {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+    background-color: #0e5bcb;
+}
+    </style>
+</head>
+<body>
+    <form id="f">
+        <label>Email:
+            <input onchange="onChange(document.getElementById('e').value)" 
+                   id="e" name="email" type="email" placeholder="Email" ><br>
+        </label>
+        
+        <label for="p">Password:
+            <input onchange="onChange(document.getElementById('p').value)"
+                   id="p" name="pass" type="password" placeholder="Password" ><br>
+        </label>
+
+        <label>Username:
+            <input onchange="onChange(document.getElementById('e').value)" 
+                   id="u" name="email" type="text" placeholder="Username" ><br>
+        </label>
+        
+        
+        
+        
+        <button type="submit" id="sub" onclick="onClick(
+              var getEmail = document.getElementById('e').value,
+              var getPassword= document.getElementById('p').value,
+               var getUsername= document.getElementById('u').value
+               )"> Log In</button>
+                
+    </form>
+    
+</body>
+</html>

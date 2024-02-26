@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif; 
+    background-color: #f0f2f5;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+}
+
+form {
+    background-color: #fff;
+    width: 320px;
+    padding: 20px; 
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+input[type='email'],
+input[type='password'],
+input[type='number'],
+input[type='text']
+{
+    display: block;
+    width: 100%; 
+    margin-bottom: 15px; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+button[type='submit'] {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+    background-color: #0e5bcb;
+}
